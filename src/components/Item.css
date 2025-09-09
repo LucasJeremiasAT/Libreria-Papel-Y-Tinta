@@ -1,0 +1,110 @@
+.card-contain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.item-card {
+    background-color: #3DB2FF;
+    border: 2px solid #FF2442;
+    border-radius: 16px;
+    padding: 16px;
+    width: 220px;
+    height: 480px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 10px auto;
+}
+
+.item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+/* Título */
+.item-card_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Imagen */
+.item-card_img {
+    width: 80%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background-color: #FFEDDA;
+    padding: 6px;
+}
+
+/* Precio */
+.item-card_price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FF2442;
+    margin-top: 8px;
+}
+
+/* Boton agregar al carrito */
+
+button {
+    background-color: #FF2442;
+    border: 2px solid #E51E3D;
+    border-radius: 4px;
+    color: #fff;
+    padding: 12px 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #E51E3D;
+    border-color: #C11532;
+}
+
+button:active {
+    background-color: #C11532;
+    border-color: #9C112A;
+}
+
+/* Selector de color */
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+select {
+    background-color: #FFB830;
+    border: 2px solid #FF2442;
+    border-radius: 4px;
+    color: #333;
+    padding: 8px 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+select:hover {
+    border-color: #E51E3D;
+}
+
+select:focus {
+    border-color: #C11532;
+    box-shadow: 0 0 0 2px rgba(255, 36, 66, 0.2);
+}
+
+
+.color-selector {
+    font-weight: bold;
+}
