@@ -1,17 +1,10 @@
-.card-contain {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-}
-
 .item-card {
     background-color: #3DB2FF;
     border: 2px solid #FF2442;
     border-radius: 16px;
     padding: 16px;
     width: 220px;
-    height: 480px;
+    height: 380px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -29,6 +22,9 @@
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
+    line-height: 1.2;
+    min-height: 2.4em;
+    overflow: hidden;
 }
 
 /* Imagen */
@@ -50,7 +46,7 @@
     margin-top: 8px;
 }
 
-/* Boton agregar al carrito */
+/* Boton ver detalles */
 
 button {
     background-color: #FF2442;

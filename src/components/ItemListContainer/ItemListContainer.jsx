@@ -1,0 +1,74 @@
+import { useParams } from "react-router";
+import getProducts, { getProductsByCategory } from "../../data/mockAPI";
+import Item from "../ItemListContainer/Item";
+import "./ItemListContainer.css"
+import { CategoryNotFound } from "../NotFound";
+import { useEffect, useState } from "react";
+
+function ItemListContainer({ greeting }) {
+    
+    const [productos, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
+    const { categParam } = useParams();
+
+    useEffect( () =>{
+
+        setLoading(true);
+        setError(false);
+
+        if(categParam === undefined){
+            console.log("Peticion de datos");
+            const promiseData = getProducts();
+            promiseData.then( (respuesta) => {
+                console.log("Datos recibidos...", respuesta);
+                setProducts(respuesta);
+                setLoading(false);            
+        
+            }).catch( (error) => {
+                alert(`Error ${error}`);
+                setError(true);
+                setLoading(false);
+            });
+        }
+        else {
+            getProductsByCategory(categParam)
+                .then( response => {
+                    setProducts(response);
+                    setLoading(false); 
+                })
+                .catch(error => {
+                    alert(`Error ${error}`);
+                    setError(true);
+                    setLoading(false);
+                })
+        }
+    }, [categParam]);
+
+    if (loading) {
+        return <h2>Cargando productos...</h2>;
+    }
+
+    if (error) {
+        return <CategoryNotFound />;
+    }
+
+    return (
+        <section>
+            <h2>{greeting}</h2>
+            <p>Nuestros productos</p>
+            <div className="card-contain">
+                {
+                    productos.map( (item) => 
+                        { return <Item 
+                                key={item.id}
+                                {...item}
+                            /> 
+                        })
+                }
+            </div>
+        </section>
+    )
+}
+
+export default ItemListContainer
