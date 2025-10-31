@@ -85,6 +85,24 @@ npm run dev
 ├── 📄 index.css
 └── 📄 main.jsx
 
+🗂️ Descripción de carpetas
+
+| Carpeta | Descripción |
+|----------|-------------|
+| **components/** | Contiene todos los componentes reutilizables del proyecto. Cada subcarpeta representa una parte funcional del eCommerce. |
+| **CartContainer/** | Maneja el flujo de compra y el formulario de checkout. |
+| **ItemDetailContainer/** | Muestra la información detallada de cada producto y permite seleccionar cantidad. |
+| **ItemListContainer/** | Renderiza el listado general de productos y vistas filtradas por categoría. |
+| **Navbar/** | Contiene el menú principal y elementos de navegación del sitio. |
+| **CartWidget.jsx** | Muestra el ícono y contador del carrito dentro del navbar. |
+| **ItemColorPick.jsx** | Permite seleccionar variantes de color de los productos (si aplica). |
+| **NotFound.jsx** | Página de error 404 para rutas no existentes. |
+| **context/** | Implementa el Context API para manejar el estado global del carrito. |
+| **data/** | Archivos de configuración y datos: conexión con Firebase y mock API local. |
+| **App.jsx / App.css** | Componente raíz de la aplicación y sus estilos globales. |
+| **main.jsx** | Punto de entrada principal donde se monta la app en el DOM. |
+| **index.css** | Estilos base y normalización de la aplicación. |
+
 * Funcionalidades destacadas
 * Funcionalidad	Descripción
 🏠 Navbar dinámica	Incluye navegación entre Home, Categorías y Carrito
