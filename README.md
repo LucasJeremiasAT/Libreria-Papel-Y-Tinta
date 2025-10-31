@@ -42,6 +42,49 @@ npm run dev
 * Luego accedé desde tu navegador a:
 👉 http://localhost:5173
 
+🧩 Arquitectura del proyecto
+
+📦 src
+├── 📁 components
+│ ├── 📁 CartContainer
+│ │ ├── 📄 CartContainer.css
+│ │ ├── 📄 CartContainer.jsx
+│ │ ├── 📄 FormCheckout.css
+│ │ └── 📄 FormCheckout.jsx
+│ │
+│ ├── 📁 ItemDetailContainer
+│ │ ├── 📄 ItemCount.css
+│ │ ├── 📄 ItemCount.jsx
+│ │ ├── 📄 ItemDetailContainer.css
+│ │ └── 📄 ItemDetailContainer.jsx
+│ │
+│ ├── 📁 ItemListContainer
+│ │ ├── 📄 Item.css
+│ │ ├── 📄 Item.jsx
+│ │ ├── 📄 ItemListContainer.css
+│ │ └── 📄 ItemListContainer.jsx
+│ │
+│ ├── 📁 Navbar
+│ │ ├── 📄 NavBar.css
+│ │ └── 📄 NavBar.jsx
+│ │ 
+│ ├── 📄 CartWidget.jsx
+│ ├── 📄 ItemColorPick.jsx
+│ └── 📄 NotFound.jsx
+│ 
+├── 📁 context
+│ ├── 📄 cartContext.css
+│ └── 📄 cartContext.jsx
+│
+├── 📁 data
+│ ├── 📄 firebase.js
+│ └── 📄 mockAPI.js
+│
+├── 📄 App.css
+├── 📄 App.jsx
+├── 📄 index.css
+└── 📄 main.jsx
+
 * Funcionalidades destacadas
 * Funcionalidad	Descripción
 🏠 Navbar dinámica	Incluye navegación entre Home, Categorías y Carrito
