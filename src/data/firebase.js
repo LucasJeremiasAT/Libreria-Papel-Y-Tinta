@@ -18,7 +18,7 @@ const db = getFirestore(app);
 export async function getProducts(){
     //referencia a una colección
     const productsRef = collection(db, "productos");
-    //lee el estado de mi colección
+    //leer el estado de mi colección
     const productsSnapshot = await getDocs(productsRef);
 
     const dataDocs = productsSnapshot.docs.map( doc => {
