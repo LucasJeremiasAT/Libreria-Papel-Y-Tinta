@@ -1,0 +1,134 @@
+/* Estilo general para el contenedor principal del carrito */
+.cart-container {
+    max-width: 1000px; 
+    margin: 40px auto; 
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #3DB2FF; 
+    border-radius: 16px; 
+    border: 2px solid #FF2442;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Título principal del carrito */
+.cart-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #FF2442;
+    padding-bottom: 10px;
+}
+
+/* Contenedor de los ítems del carrito */
+.cart-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo individual de cada ítem en el carrito */
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border: 2px solid #FF2442;
+    border-radius: 5px;
+    background-color: #FFB830;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Imagen del producto */
+.cart-item img {
+    border-radius: 4px;
+    object-fit: cover;
+    border: 1.5px solid #E6A72C;
+}
+
+/* Información del producto (nombre, precio, cantidad) */
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h4 {
+    margin-top: 0;
+    color: #007bff; 
+}
+
+/* Botón para eliminar un producto */
+.remove-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.remove-button:hover {
+    transform: scale(1.1); 
+}
+
+.remove-button img {
+    display: block; 
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+/* Estilo para la línea divisoria */
+.cart-container hr {
+    border: 0;
+    height: 1px;
+    background: #FF2442;
+    margin: 30px 0;
+}
+
+/* Total a pagar */
+.cart-total h4 {
+    text-align: right;
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 0;
+}
+
+/* Estilo para el mensaje de carrito vacío y la confirmación de compra */
+.empty-cart-message,
+.order-confirmation {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.empty-cart-message button,
+.order-confirmation a {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.empty-cart-message button:hover,
+.order-confirmation a:hover {
+    background-color: #0056b3;
+}
+
+/* id de la compra */
+
+.id-compra-container {
+    background-color: #3DB2FF;
+    margin: 40px;
+    border: 2px solid #FF2442;
+    border-radius: 16px;
+}
+
+.volver-inicio-btn {
+    margin: 10px;
+}

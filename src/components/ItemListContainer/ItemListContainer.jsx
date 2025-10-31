@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import getProducts, { getProductsByCategory } from "../../data/mockAPI";
+import { getProducts, getProductsByCategory } from "../../data/firebase"
 import Item from "../ItemListContainer/Item";
 import "./ItemListContainer.css"
 import { CategoryNotFound } from "../NotFound";
@@ -26,7 +26,7 @@ function ItemListContainer({ greeting }) {
                 setLoading(false);            
         
             }).catch( (error) => {
-                alert(`Error ${error}`);
+                console.error(`Error al obtener productos: ${error.message}`);
                 setError(true);
                 setLoading(false);
             });
@@ -38,7 +38,7 @@ function ItemListContainer({ greeting }) {
                     setLoading(false); 
                 })
                 .catch(error => {
-                    alert(`Error ${error}`);
+                    console.error(`Error al obtener productos por categoría: ${error.message}`);
                     setError(true);
                     setLoading(false);
                 })

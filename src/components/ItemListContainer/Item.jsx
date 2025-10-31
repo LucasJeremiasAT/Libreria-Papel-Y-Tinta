@@ -10,7 +10,7 @@ function Item( props ) {
         <div className="item-card">
             <h3 className="item-card_title"> {nombre} </h3>
             <img className="item-card_img" src={imagen} alt={nombre}></img>
-            <p className="item-card_price"> ${precio} </p>
+            <p className="item-card_price"> ${precio.toFixed(2)} </p>
             <hr/>
             <Link to={`/detalle/${id}`}>
                 <button>Ver detalle</button>

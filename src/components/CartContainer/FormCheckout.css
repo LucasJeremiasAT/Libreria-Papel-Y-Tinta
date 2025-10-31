@@ -1,0 +1,87 @@
+/* Estilo para el contenedor principal del formulario */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    max-width: 400px; 
+    margin: 40px auto 20px auto; 
+    padding: 30px;
+    border: 2px solid #FF2442;
+    border-radius: 8px;
+    background-color: #FFB830;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las etiquetas (label) que contienen input */
+.checkout-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95em;
+}
+
+/* Estilo para los campos de entrada (input) */
+.checkout-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #FF2442;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al enfocar un campo (cuando el usuario hace click/tab) */
+.checkout-form input:focus {
+    border-color: #9C112A; 
+    box-shadow: 0 0 0 3px rgba(156, 17, 42, 0.25);
+    outline: none; 
+}
+
+/* Contenedor para los botones */
+.checkout-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: bold;
+}
+
+/* Botón principal (Enviar/Pagar) */
+.checkout-form button[type="submit"] {
+    background-color: #FF2442;
+    border: 2px solid #E51E3D;
+    color: #FFF;
+}
+
+.checkout-form button[type="submit"]:hover {
+    background-color: #E51E3D;
+    border-color: #C11532;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Botón secundario (Limpiar Form) */
+.checkout-form button[type="button"] {
+    background-color: #6c757d;
+    border-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #FFF;
+}
+
+.checkout-form button[type="button"]:hover {
+    background-color: #5a6268;
+    border-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Alerta form */
+
+.borde-alerta-form {
+    border: 2px solid #FF2442;
+    border-radius: 8px;
+}

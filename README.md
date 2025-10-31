@@ -1,12 +1,65 @@
-# React + Vite
+# 🖋️ Librería Papel y Tinta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Librería Papel y Tinta** es un eCommerce moderno enfocado en la venta de útiles escolares, accesorios y artículos de papelería.  
+Desarrollado con **React** y **Firebase**, este proyecto combina una interfaz simple, rápida y funcional con una experiencia de compra intuitiva.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo
 
-## Expanding the ESLint configuration
+👉 [www.papelytinta.com](https://www.papelytinta.com)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Tecnologías principales
+
+- Frontend: React + Vite
+- Routing: React Router
+- Backend: Firebase
+- UI Feedback: SweetAlert2
+- Estado global: Context API
+- Estilos: CSS modular y responsive design
+
+---
+
+## 📦 Instalación y ejecución local
+
+Cloná el repositorio e instalá las dependencias:
+
+```bash
+# 1️⃣ Clonar el repositorio
+git clone https://github.com/LucasJeremiasAT/Libreria-Papel-Y-Tinta
+
+# 2️⃣ Ingresar al directorio del proyecto
+cd Libreria-Papel-Y-Tinta
+
+# 3️⃣ Instalar dependencias
+npm install
+
+# 4️⃣ Iniciar el entorno de desarrollo
+npm run dev
+
+* Luego accedé desde tu navegador a:
+👉 http://localhost:5173
+
+* Funcionalidades destacadas
+* Funcionalidad	Descripción
+🏠 Navbar dinámica	Incluye navegación entre Home, Categorías y Carrito
+🛍️ Categorías organizadas	Productos agrupados por tipo: útiles, accesorios y papelería
+🛒 Carrito de compras funcional	Añadí, eliminá y actualizá productos en tiempo real
+📦 Checkout con formulario	Completa tu compra con validación de datos
+🔥 Integración con Firebase	Base de datos, autenticación y almacenamiento
+🍬 Alertas interactivas	Uso de SweetAlert2 para feedback visual
+
+( - Próximamente se agregarán imágenes de la interfaz del eCommerce)
+
+👨‍💻 Autor
+
+* Desarrollado por Lucas Anacondio
+🌐 Sitio web: www.papelytinta.com
+📬 Contacto: lucasjanacondiot@gmail.com
+
+📝 Licencia
+
+* Este proyecto se distribuye bajo la licencia MIT. Podés usarlo, modificarlo y compartirlo libremente.
+

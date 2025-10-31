@@ -17,8 +17,8 @@ function NavBar() {
                 <Link to="/categoria/accesorios">
                     <li>Accesorios</li>
                 </Link>
-                <Link to="contacto">
-                    <li>Contacto</li>
+                <Link to="/categoria/papelera">
+                    <li>Papelera</li>
                 </Link>
             </ul>
             <div>

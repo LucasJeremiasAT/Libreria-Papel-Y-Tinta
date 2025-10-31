@@ -1,0 +1,72 @@
+/* Contenedor principal */
+.counter-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+/* Botones de Suma y Resta (el .count_btn) */
+.count_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #FFB830;
+    border: 2px solid #E51E3D;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.count_btn:hover {
+    background-color: #E6A72C;
+}
+
+.count_btn:active {
+    transform: scale(0.98);
+}
+
+/* El Contador de Cantidad */
+.counter-container span {
+    min-width: 40px; 
+    padding: 5px 0;
+    font-size: 1.1rem;
+    font-weight: 500; 
+    color: #000;
+    text-align: center;
+    border: 2px solid #FF2442;
+    border-radius: 5px;
+    background-color: #FFB830;
+}
+
+/* Botón "Agregar" (El último botón sin clase) */
+.counter-container button:last-child {
+    background-color: #FF2442;
+    border: 2px solid #E51E3D;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1; 
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.counter-container button:last-child:hover {
+    background-color: #E51E3D;
+    border-color: #C11532;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter-container button:last-child:active {
+    background-color: #C11532;
+    border-color: #9C112A;
+    transform: translateY(1px); /* Efecto de hundimiento al hacer click */
+}

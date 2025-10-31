@@ -35,10 +35,23 @@
 
 /* Precio */
 .detail_price {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #FF2442;
+    margin: auto;
     margin-top: 8px;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #FF2442;
+    border: 2px solid #E51E3D;
+    border-radius: 4px;
+    width: max-content;
+}
+
+/* Stock */
+
+.detail_stock {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
 }
 
 /* Boton agregar al carrito */
