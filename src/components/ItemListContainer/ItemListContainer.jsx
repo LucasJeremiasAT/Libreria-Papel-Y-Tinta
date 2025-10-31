@@ -56,7 +56,7 @@ function ItemListContainer({ greeting }) {
     return (
         <section>
             <h2>{greeting}</h2>
-            <p>Nuestros productos</p>
+            <p><strong>Nuestros productos...</strong></p>
             <div className="card-contain">
                 {
                     productos.map( (item) => 
