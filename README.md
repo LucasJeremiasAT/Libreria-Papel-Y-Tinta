@@ -7,7 +7,7 @@ Desarrollado con **React** y **Firebase**, este proyecto combina una interfaz si
 
 ## 🚀 Demo
 
-👉 [www.papelytinta.com](https://www.papelytinta.com)
+👉 [www.libreria-papel-y-tinta-9qfeykx37-lucas-projects-eeeeec83.vercel.app/](https://libreria-papel-y-tinta-9qfeykx37-lucas-projects-eeeeec83.vercel.app/)
 
 ---
 
@@ -56,7 +56,7 @@ npm run dev
 👨‍💻 Autor
 
 * Desarrollado por Lucas Anacondio
-🌐 Sitio web: www.papelytinta.com
+🌐 Sitio web: https://libreria-papel-y-tinta-9qfeykx37-lucas-projects-eeeeec83.vercel.app/
 📬 Contacto: lucasjanacondiot@gmail.com
 
 📝 Licencia
